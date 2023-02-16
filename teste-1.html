@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <meta charset="UTF-8">
+
+</html>
+
+<script>
+    function pulaLinha(){ 
+        document.write("<br>");
+    }
+
+    function exibe(frase){ 
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var primeiraIdade = parseFloat(prompt("Insira a primeira idade:"));
+    var segundaIdade = parseFloat(prompt("Insira a segunda idade:"));
+    var terceiraIdade = parseFloat(prompt("Insira a terceira idade:"));
+    var media = ((primeiraIdade + segundaIdade + terceiraIdade) / 3);
+    var mediaArredondada = media.toFixed(1);
+    var ano = 2022
+
+    if(mediaArredondada >= 18){ 
+        
+        exibe("A média das idades é " + (mediaArredondada)+ " em " + ano);
+
+    } else{ 
+
+        exibe("A sua familia está com a média baixa.");
+
+    }
+
+
+
+    
+
+
+
+</script>

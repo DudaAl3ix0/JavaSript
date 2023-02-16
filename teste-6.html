@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <meta charset="UTF-8">
+
+
+    <p>Informe o número:</p>
+    <input>
+    <br>
+    <br>
+    <button>Verificar</button>
+
+
+
+
+</html>
+
+<script>
+    var numeroCorreto = (Math.round(Math.random()*10));
+    var numeroInformado = document.querySelector("input");
+    numeroInformado.focus();
+    
+
+    function verifica(){  
+        
+            if(numeroInformado.value == numeroCorreto ){ 
+                alert("Voce acertou!");
+                
+            } else{ 
+                alert("Voce errou! O número certo é " + numeroCorreto);
+            }numeroInformado.value="";
+            numeroInformado.focus();
+        
+
+        
+    }
+
+    
+    var botao = document.querySelector("button");
+    botao.onclick = verifica;
+
+</script>

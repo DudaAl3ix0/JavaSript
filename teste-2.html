@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <meta charset="UTF-8">
+
+</html>
+
+<script>
+    function pulaLinha(){ 
+        document.write("<br>");
+    }
+
+    function exibe(frase){ 
+        document.write(frase);
+        pulaLinha();
+    }
+    
+
+    var suaIdade = parseInt(prompt("Insira sua idade:"));
+    var idadePermitida = 18;
+
+    if(suaIdade >= idadePermitida ){ 
+
+        exibe("É permitido dirigir com a sua idade");
+
+    } else { 
+
+        exibe("Não é permitido dirigir com a sua idade");
+
+    }
+
+
+
+
+</script>

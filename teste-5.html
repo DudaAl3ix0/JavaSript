@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <meta charset="UTF-8">
+
+
+    <p>Informe sua idade:</p>
+    <input>
+    <br>
+    <br>
+    <button>Verificar</button>
+
+
+
+
+</html>
+
+<script>
+    var idadeInformada = document.querySelector("input");
+    var idadePermitida = 18
+    idadeInformada.focus();
+    
+
+    function verifica(){  
+        
+            if(idadeInformada.value >= idadePermitida ){ 
+                alert("Voce pode dirigir!");
+                
+            } else{ 
+                alert("Voce não pode dirigir! A idade certa é com " + idadePermitida);
+                
+            }idadeInformada.value="";
+            idadeInformada.focus();
+        
+
+        
+    }
+
+    
+    var botao = document.querySelector("button");
+    botao.onclick = verifica;
+
+</script>
